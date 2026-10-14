@@ -32,13 +32,21 @@ app.get("/admin", (req, res) => {
   res.render("admin.ejs");
 });
 
-app.post("/add", (req, res) => {
+app.post("/add", async (req, res) => {
   const isbn = req.body.isbn;
   const notes = req.body.notes;
+  const response = await axios.get(
+    `https://openlibrary.org/search.json?isbn=${isbn}`
+  );
 
-  console.log(isbn);
-  console.log(notes);
+   const book = response.data.docs[0];
 
+  const title = book.title;
+  const author = book.author_name[0];
+  const cover_id = book.cover_i;
+
+  await db.query("INSERT INTO books (title,author,isbn,notes,cover_id) VALUES($1,$2,$3,$4,$5)",[title,author,isbn,notes,cover_id]);
+    
   res.redirect("/");
 });
 

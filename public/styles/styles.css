@@ -1,12 +1,12 @@
 body {
-     background-color: #34495e;
+     background-color:#402a23;
     margin: 0;
     padding: 0;
-    color: #111314;
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    color: whitesmoke;
+      font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
     text-align: center;
 }
 
@@ -29,9 +29,10 @@ body {
     align-items: flex-start;
     gap: 30px;
     margin-bottom: 50px;
-   background-color: #e4f1fe;
+   background-color:#eeedbe;
     padding: 20px;
     border-radius: 15px;
+    color: #111314;
 }
 
 .book-card img {
