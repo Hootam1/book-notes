@@ -1,34 +1,46 @@
-body{
-    background-color:#e4f1fe;
-    margin:0;
-    padding:0;
+body {
+    background-color: #e4f1fe;
+    margin: 0;
+    padding: 0;
     color: #111314;
-     font-family: "Cinzel", serif;
+    font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     text-align: center;
 }
 
-.title{
+.title {
     padding: 20px;
-    margin: 0px;
-}
-.description{
-    margin-bottom: 50px;
-}
-.book-container{
-    text-align:left;
-    padding: 20px;
+    margin: 0;
 }
 
-.book-info{
-    padding: 20px;
+.description {
     margin-bottom: 50px;
 }
 
-.book-card{
- display:flex;
-    align-items:flex-start;
-    gap:30px;
+.book-container {
+    text-align: left;
+    padding: 20px;
+}
+
+.book-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.book-card img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.book-info {
+    padding: 20px;
 }

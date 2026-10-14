@@ -4,40 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahmoud Book notes</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+   <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Cinzel&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
     <h1 class="title">Mahmoud Book Notes</h1>
     <p class="description">These are the books that I have read since I started reading.</p>
-</header>    
+</header>   
+
 <main class="book-container">
-<div class="book-card">
-    <img src="/images/book-cover.jpg" alt="Book cover">
+<% books.forEach(function(book){ %>
+
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/isbn/<%= book.isbn %>-M.jpg" alt="Book cover">
 
       <div class="book-info">
-        <h2>Book Title</h2>
-        <p>Author Name</p>
-        <p>Rating: ⭐⭐⭐⭐⭐</p>
+        <h2><%= book.title %></h2>
+        <p><%= book.author %></p>
+        <p>Rating: <%= book.rating %> ⭐</p>
         <p>
-          My notes about this book will appear here.
-        </p>
- </div>  
-</div>
- <div class="book-card">
-
-      <img src="/images/book-cover.jpg" alt="Book cover">
-
-      <div class="book-info">
-        <h2>Another Book</h2>
-        <p>Another Author</p>
-        <p>Rating: ⭐⭐⭐⭐</p>
-        <p>
-          Another book summary and notes.
+          <%= book.notes %>
         </p>
       </div>
-
     </div>
+
+  <% }); %>
+   
 </main>
 </body>
 
