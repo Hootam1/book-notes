@@ -1,5 +1,5 @@
 body {
-    background-color: #e4f1fe;
+     background-color: #34495e;
     margin: 0;
     padding: 0;
     color: #111314;
@@ -29,7 +29,7 @@ body {
     align-items: flex-start;
     gap: 30px;
     margin-bottom: 50px;
-    background-color: white;
+   background-color: #e4f1fe;
     padding: 20px;
     border-radius: 15px;
 }
