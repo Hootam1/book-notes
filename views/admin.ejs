@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book Page</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+   <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Cinzel&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Mahmoud Books Notes</h1>
+    </header>
+    <form action="/add" method="post">
+        <label for="isbn">Enter the book ISBN</label>
+        <input type="text" name="isbn" id="isbn">
+        
+        <label for="notes">Enter your notes</label>
+        <textarea name="notes" rows="5" cols="40" id="notes"></textarea>
+
+        <button type="submit">Add Book</button>
+    </form>
+</body>
+</html>
